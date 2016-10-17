@@ -1,0 +1,46 @@
+/*Stylesheet CSS */
+body {
+  background-color: #56A5EC;
+  font-family: Arial;
+}
+h1 {
+  font-family: Arial;
+  font-weight: bold;
+  text-align: center;
+}
+input {
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  border-radius: 5px;
+}
+legend {
+  border-radius: 10px;
+  border-color: black;
+  border-style: ridge;
+  background-color: #A9A9A9
+}
+fieldset {
+  border-radius: 10px;
+  border-color: black;
+  margin: 20px;
+  background-color: #87CEFA
+}
+button {
+  background-color: #A9A9A9;
+  border: solid black;
+  border-width: 2px;
+  border-radius: 10px;
+  padding: 10px 20px;
+  text-align: left;
+  margin: 20px;
+  text-align: center;
+  font-size: 24px;
+  margin-left: 500px;
+  color: black;
+}
+#ipList {
+  height: 300px;
+  width: 300px;
+  margin-left: 200px;
+}

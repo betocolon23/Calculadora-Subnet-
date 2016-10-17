@@ -1,0 +1,57 @@
+<!Doctype html>
+<html>
+  <head>
+    <title>Calculadora Subnet</title>
+    <link rel="stylesheet" type="text/css" href="CalculadoraStylesheet.css">
+    <script src="calculadoraSubnet.js"></script>
+  </head>
+  <body>
+    <h1>Subnet Calculator</h1>
+
+    <!--Input Forms-->
+      <form onsubmit="return checkSubnetClass()">
+          <fieldset>
+          <legend> Network </legend>
+            <p> Network Address: (please enter the Network Address)
+              <input id="firstOctect" type="number" name="firstOctect" min="0" max="255" step="1" required="required"/>
+              <input id="secondOctect" type="number" name="secondOctect" min="0" max="255" step="1" required="required"/>
+              <input id="thirdOctect" type="number" name="thirdOctect" min="0" max="255" step="1" required="required"/>
+              <input id="fourthOctect" type="number" name="fourthOctect" min="0" max="255" step="1" required="required"/>
+            </p>
+          </fieldset>
+
+          <!--subnet quantity -->
+          <fieldset>
+            <legend> Subnet Quantity </legend>
+            <p> Subnet Number: (Enter a numeric value)
+              <input id="subnetNumber" type="number" name="subnetNumber" min="0" required="required"/>
+            </p>
+          </fieldset>
+
+          <!--Boton de calcular la clase-->
+          <button id="calculate" type="submit">Calculate </button>
+      </form>
+
+      <!--Output Form-->
+
+      <form id="output">
+        <fieldset>
+          <legend> Results: </legend>
+          <table>
+            <tr>
+              <td><p>Network Address</p>
+                <input id="networkAddress" type="text" name="networkAddress"/>
+              <p>Subnet Mask: </p>
+                <input id="subnetMask" type="text" name="subnetMask"/>
+              <p>Subnet Class: </p>
+                <input id="subnetClass" type="text" name="subnetClass"/>
+              </td>
+              <td><p style="margin-left: 200px">IP Address: </p>
+                <ul id="ipList">
+                </ul>
+              </td>
+            </tr>
+        </fieldset>
+      </form>
+  </body>
+</html>
