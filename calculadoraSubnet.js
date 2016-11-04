@@ -2,6 +2,7 @@
 
 function checkSubnetClass() {
   // Sacar la clase
+  // Beto wuelebicho
   var clase = 0;
   if (parseInt(document.getElementById("secondOctect").value) === 0) {
     document.getElementById("subnetClass").value = "Class A";
