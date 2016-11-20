@@ -1,1 +1,1 @@
-<?php header( 'Location: /calcularSubnet.html' ) ;  ?>
+<?php header( 'Location: /calcularSubnets.html' ) ;  ?>
